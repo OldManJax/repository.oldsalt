@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.0" provider-name="Jax">
+<extension point="xbmc.addon.repository" name="Old Salt Repository">
+    <dir>
+        <info compressed="false">https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml</info>
+        <checksum>https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/OldManJax/repository.oldsalt/raw/master/</datadir>
+    </dir> 
+    <!--IAGL-->    
+    <dir>
+        <info compressed="true">https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml</info>
+        <checksum>https://github.com/zach-morris/repository.zachmorris/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/zach-morris/repository.zachmorris/master/</datadir>
+    </dir>
+    <!--CoCoScrapers--> 
+    <dir minversion="19.0">
+        <info compressed="false">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
+    </dir>
+    <!--TouTube-->
+    <dir minversion="19.0.0">
+        <info compressed="false">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/addons.xml</info>
+        <checksum>https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/addons.xml.md5</checksum>
+        <datadir zip="true">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/zips</datadir>
+        <hashes>false</hashes>           
+    </dir>  
+    <!--A4K Subtitles-->
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
+        <artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
+		<datadir zip="true">https://github.com/newt-sc/a4kSubtitles/archive</datadir>
+	</dir>
+    <!--World Repo-->
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/akeotaseo/World-Repo-Repository/main/</datadir>
+	</dir>
+    <!--TMDB Helper-->
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/</datadir>
+    </dir>
+    <dir minversion="19.9.1" maxversion="20.9.0">
+        <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/nexusrepo/zips/</datadir>
+    </dir>
+    <dir minversion="20.9.1">
+        <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
+    </dir>
+    <!--Simple Wizard-->
+    <dir>
+        <info compressed="false">https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/Slamious/swzips/main/zips/</datadir>
+    </dir>
+    <!--ResolveURL-->
+    <dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+    </dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+	<summary>Handy Add-ons and Utilities</summary>
+    <description>This and that with a few other things to sail the high seas</description>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+</extension>
+</addon>
+
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.14.3" provider-name="WNT2">
+    <requires>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+        <import addon="inputstream.adaptive"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">WatchNixtoons2</summary>
+        <description lang="en">
+Watch cartoons and anime from [COLOR orange][B]www.wcostream.tv[/B][/COLOR].
+
+Support the WatchCartoonOnline website with a PayPal donation to:
+[COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
+
+Add-on originally by doko.
+Random updates by lolage.
+        </description>
+        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+        <language>en</language>
+        <platform lang="en">all</platform>
+        <news>[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+
+[B]0.14.3:[/B]
+- wcoflix - fix m3u8 streams
+- Update Thumbnail Hashes
+- Update User Agent
+
+[B]0.14.2:[/B]
+- wcostream - add new movie workaround
+- Update Thumbnail Hashes
+
+[B]0.14.1:[/B]
+- wcoforever - add domain
+- wcofun - fix search
+- wcofun - add thumbnails to series search
+- wcofun - change to wcoflix
+- wcostream - movie workaround is now only limited to movies that are outside movie cat
+- Update Thumbnail Hashes
+- Update User Agent
+
+[B]0.14.0:[/B]
+- Code Tidyup
+- Separate Trakt Integration
+- Add TMDB thumbnails
+- Fix wcostream premium workaround</news>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="context.themoviedb.helper" version="2.0.0a" name="TMDbHelper - Additional Context Menu Items" provider-name="jurialmunkey">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="plugin.video.themoviedb.helper" version="6.9.5" />
+    </requires>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <menu>
+                <label>$ADDON[context.themoviedb.helper 32000]...</label>
+                <item library="context.py" args="play_using">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32322]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="related_lists">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32235]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="sync_trakt">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32295]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="refresh_details">
+                    <label>$ADDON[plugin.video.themoviedb.helper 32233]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="modify_identifier">
+                    <label>$ADDON[context.themoviedb.helper 32001]</label>
+                    <visible>[Skin.HasSetting(TMDbHelper.Service)]</visible>
+                </item>
+                <item library="context.py" args="revoke_trakt">
+                    <label>$ADDON[context.themoviedb.helper 32002]</label>
+                    <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))]</visible>
+                </item>
+                <item library="context.py" args="invalidate_trakt_sync">
+                    <label>$ADDON[context.themoviedb.helper 32003]</label>
+                    <visible>[!String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))]</visible>
+                </item>
+                <item library="context.py" args="authenticate_trakt">
+                    <label>$ADDON[context.themoviedb.helper 32004]</label>
+                    <visible>[String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth))]</visible>
+                </item>
+                <item library="context.py" args="add_to_library">
+                    <label>$ADDON[context.themoviedb.helper 32005]</label>
+                    <visible>[String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,movie)]</visible>
+                </item>
+                <item library="context.py" args="open_settings">
+                    <label>$LOCALIZE[5]</label>
+                    <visible>True</visible>
+                </item>
+            </menu>
+        </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Additional context menu items for TMDbHelper</summary>
+        <description lang="en">Adds additional TMDbHelper context menu items
+        </description>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <website>https://github.com/jurialmunkey/plugin.video.themoviedb.helper</website>
+        <forum>https://forum.kodi.tv/showthread.php?tid=345847</forum>
+        <source></source>
+        <disclaimer lang="en"></disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="context.youtube.trailers" name="YouTube Trailers" version="1.0" provider-name="Jax">
+    <requires>
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="plugin.video.youtube" version="7.2.0" />
+    </requires>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="autoplay.py">
+                <label>32000</label>
+                <visible>
+                    String.IsEqual(Window(home).Property(context.trailer.autoplay),true) +
+                    [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)] +
+                    !String.IsEmpty(ListItem.Trailer)
+                </visible>
+            </item>
+            <item library="selectplay.py">
+                <label>32001</label>
+                <visible>
+                    String.IsEqual(Window(home).Property(context.trailer.selectplay),true) +
+                    [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode)]
+                </visible>
+            </item>
+        </menu>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="kodi.addon.metadata">
+        <summary lang="en">Global Context Menu</summary>
+        <description lang="en">Adds a global Kodi context menu entry for movies or shows that have a trailer on YouTube. Use from any add-on or widget. Configure settings for Select and/or Autoplay, Windowed or Fullscreen play.[CR]This is a fork of Venom's original add-on and may already be built into current Venom fork add-ons. </description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <disclaimer lang="en">Requires a working version of the YouTube Add-on</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+v1.0 - Initial Release
+        </news>
+    </extension>
+</addon>
+
+<addon id="plugin.program.openwizard" name="[COLOR khaki]OpenWizard K21[/COLOR]" version="2.0.9" provider-name="Group Effort">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.3" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Maintenance Wizard for Kodi 19/20/21</summary>
+        <description lang="en">[COLOR khaki]OpenWizard[/COLOR] offers many maintenance features, selective add-on data saving, and automated build installs. Perfect for keeping your Kodi running and distributing your own builds. You can also customize this add-on to make it your own.[CR]Many thanks to the developers drinfernoo and slamious for bringing us the Leia and Matrix versions of this add-on.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <news>
+2.0.9
+ - Updated to include Kodi 21 Omega Builds
+2.0.8
+ - Updated to include Kodi 20 Nexus Builds
+2.0.7
+ - Fix Error when using default log settings
+2.0.6
+ - Fix regex for formatting tags
+ - Fix theme selection after build install
+ - Fix downloading into invalid path
+2.0.5
+ - Add Enable All Add-ons after Build Install
+2.0.4
+ - Fix leftover broken dialogs
+2.0.3
+ - Don't show previous version builds in Matrix
+2.0.2
+ - Replace remaining occurences of LOGNOTICE
+2.0.1
+ - Add attribution to @slamious
+2.0.0
+ - Recoded for Kodi 19 Python 3
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="program.easyplayerswitch" name="Easy Player Switch" provider-name="DigiTalking" version="1.1.0">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://gitlab.com/personal4143605/easy-player-switch</source>
+        <summary lang="en_GB">Switch between VLC, custom player, and Kodi internal player easily.</summary>
+        <summary lang="it_IT">Cambia player facilmente scegliendo tra VLC, player personalizzato e player interno di Kodi.</summary>
+        <description lang="en_GB">This addon allows you to switch between VLC, custom player, and Kodi's internal player with a simple menu.</description>
+        <description lang="it_IT">Questo addon consente di cambiare player scegliendo VLC, player personalizzato e player interno di Kodi tramite un semplice menù.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.speedtester" name="Speed Tester Nexus" version="1.1.3+nexus.1" provider-name="Dr0idGuy, dagwieers, Diggz">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="resources/lib/addon_entry.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Test your Internet bandwidth</summary>
+    <description lang="en_GB">This add-on tests your Internet bandwith and reports both download and upload speeds and latency from within Kodi.
+
+Use this if you are experiencing streaming issues and you suspect your network to be the cause.</description>
+    <disclaimer lang="en_GB">Speed Tester is powered by speedtest.net</disclaimer>
+    <language>en</language>
+    <license>Apache-2.0</license>
+    <email>dag@wieers.com</email>
+    <website>https://kodi.wiki/view/Add-on:Speed_Tester</website>
+    <source>https://github.com/add-ons/script.speedtester</source>
+    <news>
+v1.1.3 (2023-2-3)
+- Fix for Nexus
+	
+v1.1.1 (2020-10-10)
+- Fix issues for Kodi repo review
+
+v1.1.1 (2020-10-10)
+- Add localization
+
+v1.1.0 (2020-09-26)
+- Move add-on to Add-ons project
+- Fix typos and structure of standard output
+
+v1.0.1 (2019-08-06)
+- Initial release
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+      <screenshot>resources/media/screenshot01.jpg</screenshot>
+      <screenshot>resources/media/screenshot02.jpg</screenshot>
+      <screenshot>resources/media/screenshot03.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.iptvlister" name="IPTV Lister" version="1.0" provider-name="Jax">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing"/>
+    <import addon="script.module.unidecode" />
+    <import addon="script.module.inputstreamhelper" />
+    <import addon="script.module.resolveurl"/>
+    <import addon="script.module.microjenscrapers" />
+    <import addon="plugin.video.tvone" optional="true" />
+    <import addon="plugin.video.tvone111" optional="true" />
+    <import addon="plugin.video.tvone112" optional="true" />
+    <import addon="plugin.video.tvone1112" optional="true" />
+	  <import addon="plugin.video.youtube" optional="true" /> 
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TV and Sports IPTV</summary>
+    <description lang="en">Live TV channels and Sports from multiple, publicly available, sources. Those sources include other plugin add-ons and direct URL links.[CR]Free IPTV can fail at any time but will hopefully be fixed at the source if they do break.</description>
+    <disclaimer lang="en">The developer of this add-on is not responsible for broken channels which is common with free IPTV </disclaimer>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL-2.0-or-later</license>
+    <news></news>
+	<assets>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+  </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.microjenscrapers" name="MicroJen Scraper Module" version="1.8" provider-name="MicroJen Community">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">MicroJen Scrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts. [CR]Massive thanks and respect to Crucial Minds for permission to use the Base Code and to The Jen Crew for their valuable contributions in bringing this project together.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
+<addon id="script.skinswitcher" 
+	     name="Skin Switcher" 
+	     version="1.0.2" 
+	     provider-name="Surfacingx, OpenELEQ, Fire TV Guru, X">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+	</assets>
+    <summary lang="en">Choose your installed skin</summary>
+    <description lang="en">This utility will allow you to quickly switch between installed skins</description>
+    <disclaimer lang="en">You have to install the skins you want before using this script</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2025.0.1" provider-name="Jon Bovi">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.future"/>
+        <import addon="script.module.mutagen"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio</provides>
+    </extension>
+    <extension point="xbmc.service" library="playerMP3.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>A music streaming Collection.</summary>
+        <description>MP3 Streams Kodi 19+</description>
+        <news>2025.0.1 - Fix Billboard Charts</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.8+matrix.1" provider-name="realvito (inspired by L0RE)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" version="2.27.0"/>
+		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
+		<summary lang="en_GB">Chartplayer for Musicvideos</summary>
+		<description lang="de_DE">Musiktitel aus verschiedenen Quellen und Charts z.B. Beatport, Billboard, Officialcharts, Shazam etc. auswählen und das entsprechende Video automatisch auf YouTube suchen und über das YouTube-Addon abspielen.[CR][CR]     TEST IT AND LIKE IT</description>
+		<description lang="en_GB">Select music titles from various sources and charts e.g. Beatport, Billboard, Officialcharts, Shazam etc. and automatically search for the corresponding video on YouTube and play it via the YouTube-Addon.[CR][CR]     TEST IT AND LIKE IT</description>
+		<disclaimer lang="de_DE">Die von diesem Addon dargestellten Inhalte werden von den Erstellern des Addons weder gehostet oder verbreitet, noch stehen die Ersteller in irgendeiner Beziehung zu den Anbietern des Inhalts.</disclaimer>
+		<disclaimer lang="en_GB">The content displayed by this Addon is not hosted or distributed by the creators of the Addon, nor do the creators have any affiliation with the providers of the content.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://www.kodinerds.net/thread/55451-l0res-blog-realvitos-fixing-thread/</forum>
+		<website></website>
+		<email></email>
+		<mainsource>https://github.com/Collabsvito/REpo-AiO/</mainsource>
+		<source>https://github.com/Collabsvito/REpo-AiO/tree/master/MATRIX/plugin.video.spotitube</source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
+- fixed: 'OfficialCharts UK' sometimes the artist is not found and an error occurs
+- added: Category = AppleMusic with some lists to choose from
+- removed: Category = iTunes (Api switched off)
+- removed: Category = Spotify (The Public-Categories of the Api are no longer freely available)
+- optimized: Removed dependency and cache of webpages with 'script.common.plugin.cache'
+- comment: * Due to various changes to the 'settings', these are automatically reset when the Addon is started for the first time and the YouTube-API-KEY must be entered again ! *
+		</news>
+	</extension>
+</addon>
+
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.27">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="resources/lib/fenlight.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="resources/lib/service.py"/>
+    <extension point="xbmc.python.module" library="resources/lib/"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Access your content from Easynews and Debrid Clouds.</summary>
+        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon. This is an English language only add-on.</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
+        <license/>
+        <assets>
+            <icon>fenlightam_icon.png</icon>
+            <fanart>fenlightam_fanart.jpg</fanart>
+        </assets>
+        <news>INFO: For latest changes see Changelog within Tools of add-on.</news>
+    </extension>
+</addon>
+
+<addon id="plugin.audio.tuneinradio" name="[COLOR aqua]TuneIn Radio K19[/COLOR]" version="4.0.2" provider-name="joaconigro">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0"/>
+		<!-- <import addon="script.module.web-pdb" /> -->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <language>en es</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+        <email>joaquinnigro@gmail.com</email>
+		<summary lang="en_GB">TuneIn Radio</summary>
+		<summary lang="es_ES">TuneIn Radio</summary>
+		<description lang="en_GB">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es_ES">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<license>MIT</license>
+		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
+		<assets>
+        	<icon>icon.png</icon>
+        	<fanart>fanart.jpg</fanart>
+    	</assets>
+	</extension>	
+</addon>
+
+<addon id="plugin.program.buildzipper" name="Build Zipper Backup" version="1.0" provider-name="Jax">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.requests" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Backup/Copy Your Build</summary>
+		<description lang="en_GB">A simple little utility to backup your complete Kodi build into one zip file, quick and easy.[CR]You can change the default zip file storage to any local location you choose, accessible by your device like a downloads folder or thumb drive.[CR]It is recommended you restore to the same version of Kodi you backed up from to avoid potential version conflicts.</description>
+		<disclaimer lang="en_GB">Uses code from the SimpleWizard add-on</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<news></news>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.fonts.installer" version="1.0.0" name="Extra SubFonts" provider-name="dEXE">
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodi Extra Subtitle Fonts Installer</summary>
+		<description>Installing and uninstalling custom fonts for subtitles:[CR][CR]Arvo, Calibri, Futura Md BT, Gill Sans MT, GillSans, Helvetica, Helvetica Neue, IBM Plex Mono, IBM Plex Sans, IBM Plex Serif, Lato Medium, Lucida Grande, Montserrat, Noto Serif, Open Sans, Roboto, Source Sans Pro, Tahoma, Verdana</description>
+		<disclaimer>Run the addon to install additional fonts. Running the addon again will uninstall the fonts.</disclaimer>
+		<platform>all</platform>
+		<language>en</language>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.youtube2kodilibrary" name="YouTube to Library" version="0.1.2" provider-name="Evantaur">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+    </requires>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Import YouTube channels into your Kodi TV Show or Music Video library.</summary>
+        <description lang="en_GB">Add channels and playlists from YouTube to Library as TV-shows or Music Videos.[CR]1. You'll need a YouTube API key for this to work, a good guide would be:[CR]https://github.com/anxdpanic/plugin.video.youtube/wiki/Personal-API-Keys[CR]If you have set custom api key for YouTube addon you should be able to skip this part.[CR]2. Set Video Source (in Kodi -> Media -> Library -> Videos -> Add Videos)[CR]- FOR Video Channels: special://profile/library/series[CR]- FOR Music Videos: special://profile/library/music_videos[CR]- Setting for Information Provider choose: LOCAL</description>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=354748</forum>
+        <website>valkyr.xyz</website>
+        <email></email>
+        <source>https://github.com/evantaur/plugin.youtube2kodilibrary</source>
+        <news>Changelog:
+            v0.1.2 (2021.1.28)            
+            - Improvements in progress
+              dialog when adding a playlist.
+            - Removed hardcoded strings.
+            
+            v0.1.1 (2021.1.28)
+            - Bug fixes
+            - Support for Tuber (Matrix only)
+            
+            v0.1.0 Beta (2020.11.30)
+            - Support for playlists.
+            - Folder structure changed
+              so channel ID is used
+              instead of channel name.
+            - Fixed search for Leia.
+            - Split addon to multiple
+              files instead of one 
+              blob.
+
+            v0.0.8 Beta (2020.6.9)
+            - Support for music videos.
+              (Thumbnails broken for v19)
+            - EGG is now considered a valid
+              unit of time.
+            - Bug fixes.
+
+            v0.0.7 Beta (2020.6.6)
+            - Multilanguage support added.
+
+            v0.0.6 Beta (2020.6.6)
+            - One codebase to rule
+              them all!
+
+            v0.0.5 Beta (2020.6.5)
+            - Rewrote parser engine
+              to handle big channels.
+            - Some little fixes.   
+
+            v0.0.4 Beta (2020.6.2)
+            - Fixed new episodes not
+              getting scanned.
+
+            v0.0.3 Alpha (2020/05/31)
+            - Added management for channels. 
+
+            v0.0.2 Alpha (2020/05/30)
+            - Added background service.
+
+            v0.0.1 Alpha (2020/05/21)
+            - Released Alpha.
+        </news>
+        <disclaimer>ActivateWindow(Videos,"plugin://plugin.youtube2kodilibrary",return)</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/media/screenshot_01.jpg</screenshot>
+            <screenshot>resources/media/screenshot_02.jpg</screenshot>
+            <screenshot>resources/media/screenshot_03.jpg</screenshot>
+            <screenshot>resources/media/screenshot_04.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.smr_link_tester" version="9.1.16" name="SMR Link Tester" provider-name="gujal">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="script.module.resolveurl"/>
+        <import addon="script.module.resolveurl.xxx"/>
+        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="script.module.kodi-six" version="0.0.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>SMR Link Tester Addon</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="script.module.viperscrapers" 
+		name="Viper Scrapers" 
+		version="1.3.0" 
+		provider-name="Jax">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="lib/default.py">
+		<provides>executable</provides>
+	</extension> 
+	<extension point="xbmc.service" library="lib/service.py" start="startup" />
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<summary lang="en">External Scrapers Module</summary>
+		<description>This module is a fork of CoCoScrapers with new scrapers from Kodifitzwell installed[CR]Credits to the develpers involved from former Fenom and CoCoScraper coders to current coders of CocoScrapers and of course, Kodifitzwell.[CR]Compatible with Fen, Fen Light, Umbrella and any other add-ons currently using the CoCoScrapers option.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<disclaimer lang="en">This module simply scans for internet sources that matches common metadata.</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+- Updated AIOSTREAMS
+- Added TORRENTSDB
+- Removed dead scrapers
+- Fixed some small issues
+		</news>
+	</extension>
+</addon>
+
+<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="2.0.6">
+  <extension library="service.py" point="xbmc.service" />
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension library="resources" point="xbmc.python.module" />
+  <extension library="addon.py" point="xbmc.python.script">
+    <provides>executable</provides>
+  </extension>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="addon.py">
+        <label>30090</label>
+        <visible>Window.IsVisible(tvguide)|Window.IsVisible(tvsearch)</visible>
+      </item>
+    </menu>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>en es de</language>
+    <summary lang="en_GB">Live TV Playlist Manager</summary>
+    <summary lang="es_ES">Gerente de Lista de Reproducción de TV en Vivo</summary>
+    <summary lang="de_DE">Manager für TV-Wiedergabelisten</summary>
+    <description lang="en_GB">
+      The Live TV PlayList Manager provides a service for clients to use to schedule live TV events. A Live TV Playlist is a list of channel change instructions that occur at a specified time. A Playlist item consists of an alarm time, channel and recurrence option. The manager maintains a database of playlist items and saves the list in a file. This file is read each time the IPTV manager starts up so that on going events will always occur. 
+    </description>
+    <description lang="es_ES">
+      Gerente de Lista de Reproducción de TV en Vivo ofrece un servicio para que los clientes utilicen para programar eventos de TV en vivo. Una lista de reproducción de TV en vivo es una lista de instrucciones de cambio de canal que ocurren en un momento específico. Un elemento de lista de reproducción consiste en una hora de alarma, un canal y una opción de repetición. El administrador mantiene una base de datos de elementos de la lista de reproducción y guarda la lista en un archivo. Este archivo se lee cada vez que se inicia el administrador para que los eventos en curso siempre ocurran.
+    </description>
+    <description lang="de_DE">
+      Der Manager für TV-Wiedergabelisten stellt einen Service für Clients zur Verfügung, um Fernsehsendungen zu planen. Eine Wiedergabeliste für TV-Programme ist eine Liste von Kanalwechselbefehlen, die zu einer bestimmten Zeit stattfinden. Ein Element der Wiedergabeliste besteht aus einer Alarmzeit, einem Kanal und einer Wiederholungsoption. Der Manager verwaltet eine Datenbank mit Wiedergabelistenelementen und speichert die Liste in einer Datei. Diese Datei wird bei jedem Start des Managers gelesen, so dass laufende Ereignisse ständig ausgeführt werden.
+    </description>
+    <disclaimer>
+      Use with context menu on your TV Guide.
+    </disclaimer>
+    <platform>all</platform>
+    <license>GNU General Public License v3.0 only, June 2007</license>
+    <source>https://github.com/jmooremcc/Live_TV_Playlist</source>
+    <email>jmooremcc@hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/screenshot001.png</screenshot>
+      <screenshot>resources/screenshots/screenshot002.png</screenshot>
+      <screenshot>resources/screenshots/screenshot004.png</screenshot>
+      <screenshot>resources/screenshots/screenshot005.png</screenshot>
+    </assets>
+  </extension>
+  <news>
+    2.0.6   April 19, 2025 - Fixed bug in Countdown module->miniClient class->killThread method
+    2.0.5   February 12, 2024 - Fixed/upgraded suspend/eneable item functionality
+                                Fixed next date calculation in PLX_Event
+    2.0.4   January 3, 2024 - Fix priorityqueue issue in Alarms  Manager
+    2.0.2   August 4, 2021  - Fixed zombie event caused by bug in Alarm _findTimer()
+                            - Sorted log alarm queue display
+
+    2.0.1   July 19, 2021 - Fixed updting based on EPG changes
+  </news>
+</addon>
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.10" provider-name="jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>  
+  <extension point="xbmc.service" library="service.py" start="startup" />  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <news>
+2.0.10: 6 June 2021 - Fixed bug that prevented Hebrew language for working
+
+2.0.9: 15 May 2021 - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability to return from child direrctories
+
+2.0.8: 14 May 2021 - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8') that caused crashes.
+
+2.0.7: 17 February 2021 - Fixed remote folder access via another plugin
+
+2.0.6: 11 January 2021 - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020 - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020 - Matrix Version
+    </news>
+  </extension>
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+      </item>
+    </menu>
+  </extension>
+</addon>
+
+<addon id="plugin.video.last_played" name="Last Played" version="6.4.1" provider-name="Luis Rodrigues">
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <!--<extension point="xbmc.service" library="default.py" />-->
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Last Played</summary>
+        <summary lang="en_US">Last Played</summary>
+        <summary lang="en_AU">Last Played</summary>
+        <summary lang="en_NZ">Last Played</summary>
+        <summary lang="pt_PT">Ultimos Vistos</summary>
+        <summary lang="pt_BR">Ultimos Vistos</summary>
+        <summary lang="sk_sk">Last Played (naposledy videné)</summary>
+        <description lang="en_GB">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+        <description lang="en_US">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+        <description lang="en_AU">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+        <description lang="en_NZ">List of the last movies, episodes and music played, including streaming sources from any addon</description>
+        <description lang="pt_PT">Ultimos filmes, episodios e musicas tocadas, incluindo fontes de streaming de qualquer addon</description>
+        <description lang="pt_BR">Ultimos filmes, episodios e musicas tocadas, incluindo fontes de streaming de qualquer addon</description>
+        <description lang="sk_SK">Naposledy prehrávané filmy, seriály a hudba, vrátane streamov z ľubovoľného doplnku</description>
+        <disclaimer lang="en_GB"></disclaimer>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+        <source>https://github.com/5-star/plugin.video.last_played</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+</addons>
