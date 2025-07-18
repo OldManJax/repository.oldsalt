@@ -709,7 +709,7 @@ v1.0.1 (2019-08-06)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.4.0" 
+		version="1.4.1" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
