@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.0" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.1" provider-name="Jax">
 <extension point="xbmc.addon.repository" name="Old Salt Repository">
     <dir>
         <info compressed="false">https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml</info>
@@ -20,7 +20,7 @@
         <checksum>https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/not-coco-joe/repository.cocoscrapers/master/zips/</datadir>
     </dir>
-    <!--TouTube-->
+    <!--YouTube-->
     <dir minversion="19.0.0">
         <info compressed="false">https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/addons.xml</info>
         <checksum>https://download.osmc.tv/dev/anxdpanic/kodi/youtube/unofficial_testing/addons.xml.md5</checksum>
@@ -55,6 +55,17 @@
         <info compressed="false">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/omega/zips/</datadir>
+    </dir>
+    <!--Umbrella-->
+    <dir minversion="18.9.701" maxversion="19.5">
+        <info compressed="false">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/matrix/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/matrix/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/matrix/zips/</datadir>
+    </dir>
+	<dir minversion="19.8.0">
+        <info compressed="false">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/nexus/zips/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/nexus/zips/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/umbrellaplug/umbrellaplug.github.io/master/nexus/zips/</datadir>
     </dir>
     <!--Simple Wizard-->
     <dir>
@@ -509,6 +520,31 @@ v1.0.1 (2019-08-06)
 - comment: * Due to various changes to the 'settings', these are automatically reset when the Addon is started for the first time and the YouTube-API-KEY must be entered again ! *
 		</news>
 	</extension>
+</addon>
+
+<addon id="plugin.video.fen" name="Fen" provider-name="Tikipeter, [COLOR red]The Red Wizard[/COLOR]" version="3.5.05">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+    </requires>
+    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="resources/lib/service.py" point="xbmc.service"/>
+    <extension library="resources/lib/" point="xbmc.python.module"/>
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary lang="en">Access your content from Furk, Easynews and Debrid Clouds.</summary>
+        <description lang="en">This add-on is intended for advanced Kodi users only. You must own the content of any media you play through this addon.</description>
+        <platform>all</platform>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and has no affiliation with any of the content providers.</disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>resources/media/fen_icon.png</icon>
+            <fanart>resources/media/fen_fanart.png</fanart>
+        </assets>
+        <news>Unofficial updates by [COLOR red]The Red Wizard[/COLOR]. For the latest changes, see the Changelog in FEN->Tools.</news>
+    </extension>
 </addon>
 
 <addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.31">
