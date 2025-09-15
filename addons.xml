@@ -369,7 +369,7 @@ v1.0.1 (2019-08-06)
   </extension>
 </addon>
 
-<addon id="plugin.video.iptvlister" name="IPTV Lister" version="1.0" provider-name="Jax">
+<addon id="plugin.video.iptvlister" name="IPTV Lister" version="1.1" provider-name="Jax">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -479,14 +479,14 @@ v1.0.1 (2019-08-06)
     </extension>
 </addon>
 
-<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.8+matrix.1" provider-name="realvito (inspired by L0RE)">
+<addon id="plugin.video.spotitube" name="You(T) Musicbox" version="3.0.9" provider-name="realvito (inspired by L0RE)">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0"/>
 		<import addon="script.module.requests" version="2.27.0"/>
 		<import addon="plugin.video.youtube" version="6.8.1+matrix.1"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video audio</provides>
+		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">Chartplayer für Musikvideos</summary>
@@ -508,13 +508,11 @@ v1.0.1 (2019-08-06)
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR orangered]Version 3.0.8+matrix.1  (22.06.2025)[/COLOR][/B]
-- fixed: 'OfficialCharts UK' sometimes the artist is not found and an error occurs
-- added: Category = AppleMusic with some lists to choose from
-- removed: Category = iTunes (Api switched off)
-- removed: Category = Spotify (The Public-Categories of the Api are no longer freely available)
-- optimized: Removed dependency and cache of webpages with 'script.common.plugin.cache'
-- comment: * Due to various changes to the 'settings', these are automatically reset when the Addon is started for the first time and the YouTube-API-KEY must be entered again ! *
+[B][COLOR orangered]Version 3.0.9+matrix.1  (14.09.2025)[/COLOR][/B]
+- fixed: 'Apple Music' Auth-Token not found and subfolders cannot be opened (Error: APPLEMUSIC - COULD NOT FIND TOKEN)
+- fixed: Billboard-Videolists, artists are not displayed correctly
+- fixed: „Title Case“-Formatting for 'German umlauts' (ÄÖÜäöüß)
+- removed: Billboard archive sorted by year, now only last year is displayed (years no longer accessible)
 		</news>
 	</extension>
 </addon>
@@ -544,7 +542,7 @@ v1.0.1 (2019-08-06)
     </extension>
 </addon>
 
-<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.36">
+<addon id="plugin.video.fenlight" name="FenLightAM" provider-name="Tikipeter/AnonyMouse" version="2.1.39">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.pil" version="1.1.7"/>
@@ -768,7 +766,7 @@ v1.0.1 (2019-08-06)
 	</extension>
 </addon>
 
-<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="2.0.6">
+<addon id="script.service.ltvpl" name="Live TV Playlist" provider-name="jmooremcc" version="2.0.7">
   <extension library="service.py" point="xbmc.service" />
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
@@ -791,7 +789,7 @@ v1.0.1 (2019-08-06)
     <summary lang="es_ES">Gerente de Lista de Reproducción de TV en Vivo</summary>
     <summary lang="de_DE">Manager für TV-Wiedergabelisten</summary>
     <description lang="en_GB">
-      The Live TV PlayList Manager provides a service for clients to use to schedule live TV events. A Live TV Playlist is a list of channel change instructions that occur at a specified time. A Playlist item consists of an alarm time, channel and recurrence option. The manager maintains a database of playlist items and saves the list in a file. This file is read each time the IPTV manager starts up so that on going events will always occur. 
+      The Live TV PlayList Manager provides a service for clients to use to schedule live TV events. A Live TV Playlist is a list of channel change instructions that occur at a specified time. A Playlist item consists of an alarm time, channel and recurrence option. The manager maintains a database of playlist items and saves the list in a file. This file is read each time the manager starts up so that on going events will always occur.
     </description>
     <description lang="es_ES">
       Gerente de Lista de Reproducción de TV en Vivo ofrece un servicio para que los clientes utilicen para programar eventos de TV en vivo. Una lista de reproducción de TV en vivo es una lista de instrucciones de cambio de canal que ocurren en un momento específico. Un elemento de lista de reproducción consiste en una hora de alarma, un canal y una opción de repetición. El administrador mantiene una base de datos de elementos de la lista de reproducción y guarda la lista en un archivo. Este archivo se lee cada vez que se inicia el administrador para que los eventos en curso siempre ocurran.
@@ -799,9 +797,6 @@ v1.0.1 (2019-08-06)
     <description lang="de_DE">
       Der Manager für TV-Wiedergabelisten stellt einen Service für Clients zur Verfügung, um Fernsehsendungen zu planen. Eine Wiedergabeliste für TV-Programme ist eine Liste von Kanalwechselbefehlen, die zu einer bestimmten Zeit stattfinden. Ein Element der Wiedergabeliste besteht aus einer Alarmzeit, einem Kanal und einer Wiederholungsoption. Der Manager verwaltet eine Datenbank mit Wiedergabelistenelementen und speichert die Liste in einer Datei. Diese Datei wird bei jedem Start des Managers gelesen, so dass laufende Ereignisse ständig ausgeführt werden.
     </description>
-    <disclaimer>
-      Use with context menu on your TV Guide.
-    </disclaimer>
     <platform>all</platform>
     <license>GNU General Public License v3.0 only, June 2007</license>
     <source>https://github.com/jmooremcc/Live_TV_Playlist</source>
@@ -809,14 +804,14 @@ v1.0.1 (2019-08-06)
     <assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
-      <screenshot>resources/screenshots/screenshot001.png</screenshot>
-      <screenshot>resources/screenshots/screenshot002.png</screenshot>
-      <screenshot>resources/screenshots/screenshot004.png</screenshot>
-      <screenshot>resources/screenshots/screenshot005.png</screenshot>
+      <screenshot>resources/screenshots/screenshot001.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot002.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot004.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot005.jpg</screenshot>
     </assets>
   </extension>
   <news>
-    2.0.6   April 19, 2025 - Fixed bug in Countdown module->miniClient class->killThread method
+    2.0.7   July 31, 2025  -  Fixed channel group bug that prevented getChannelList from working correctly in newer versions of Kodi    2.0.6   April 19, 2025 - Fixed bug in Countdown module->miniClient class->killThread method
     2.0.5   February 12, 2024 - Fixed/upgraded suspend/eneable item functionality
                                 Fixed next date calculation in PLX_Event
     2.0.4   January 3, 2024 - Fix priorityqueue issue in Alarms  Manager
@@ -909,7 +904,7 @@ v1.0.1 (2019-08-06)
     </extension>
 </addon>
 
-<addon id="program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.4">
+<addon id="program.optiklean" name="OptiKlean" provider-name="DigiTalking" version="2.0.4a">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
@@ -927,7 +922,7 @@ v1.0.1 (2019-08-06)
         <description lang="it_IT">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
         <assets>
             <icon>icon.png</icon>
-            <fanart>resources/media/fanart.jpg</fanart>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
