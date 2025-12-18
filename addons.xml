@@ -742,7 +742,7 @@ v1.0.1 (2019-08-06)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.4.3" 
+		version="1.4.4" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -765,7 +765,7 @@ v1.0.1 (2019-08-06)
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-- Updated AIOSTREAMS
+- 1.4.4 Removed dead providers
 		</news>
 	</extension>
 </addon>
