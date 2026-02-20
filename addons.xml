@@ -144,8 +144,8 @@ Random updates by lolage.
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="script.module.simplejson" />
-        <import addon="script.module.blackscrapers" optional="true" />
-        <import addon="script.module.resolveurl" optional="true" />
+        <import addon="script.module.blackscrapers" />
+        <import addon="script.module.resolveurl" />
     </requires>
     <extension library="blacklodge.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
