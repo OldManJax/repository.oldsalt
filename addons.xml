@@ -137,6 +137,82 @@ Random updates by lolage.
     </extension>
 </addon>
 
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.07g2">
+    <requires>
+        <import addon="resource.images.blacklodge.artwork" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+        <import addon="script.module.blackscrapers" optional="true" />
+        <import addon="script.module.resolveurl" optional="true" />
+    </requires>
+    <extension library="blacklodge.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="service.py" point="xbmc.service" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <summary lang="en_GB">Blacklodge</summary>
+        <description lang="en_GB">Fetches official stream urls/ids from various streaming services, and sends them to their equivalent Kodi add-on for playback.[CR]NOTE: This add-on uses free and legal resources for it's purposes. User has to have installed and configured (with linked active account where required) the supported services' equivalent add-ons in order to achieve playback.</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <forum />
+        <website />
+        <source />
+        <disclaimer lang="en_GB">This project uses the TMDb, JustWatch, Trakt, Fanart.tv APIs, but is not affiliated nor endorsed by any of their respective ogranisations.[CR]Please support these ogranisations however you can.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+        <news>
+- See Changelog on Tools menu
+        </news>
+    </extension>
+</addon>
+<addon id="resource.images.blacklodge.artwork" name="BlackLodge Artwork" version="1.0.9" provider-name="bleak-lodge">
+    <extension point="kodi.resource.images" compile="false" type="BlackLodge" />
+    <requires>
+        <import addon="kodi.resource" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Themes for BlackLodge add-on</summary>
+        <description lang="en_GB">Provided separately to allow easier distribution and consume less bandwidth</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.33g" provider-name="janedoe">
+    <requires>
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.simplejson" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Blackscrapers Module</summary>
+            <description>Blackscrapers</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+    <news></news>
+    </extension>
+</addon>
+
 <addon id="context.themoviedb.helper" version="2.0.0a" name="TMDbHelper - Additional Context Menu Items" provider-name="jurialmunkey">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -617,17 +693,34 @@ v1.0.1 (2019-08-06)
 	</extension>
 </addon>
 
-<addon id="script.fonts.installer" version="1.0.0" name="Extra SubFonts" provider-name="dEXE">
+<addon id="script.fonts.installer" version="1.1.0" name="Extra SubFonts" provider-name="dEXE">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
 	<extension point="xbmc.python.script" library="default.py" />
 	<extension point="xbmc.addon.metadata">
-		<summary>Kodi Extra Subtitle Fonts Installer</summary>
-		<description>Installing and uninstalling custom fonts for subtitles:[CR][CR]Arvo, Calibri, Futura Md BT, Gill Sans MT, GillSans, Helvetica, Helvetica Neue, IBM Plex Mono, IBM Plex Sans, IBM Plex Serif, Lato Medium, Lucida Grande, Montserrat, Noto Serif, Open Sans, Roboto, Source Sans Pro, Tahoma, Verdana</description>
-		<disclaimer>Run the addon to install additional fonts. Running the addon again will uninstall the fonts.</disclaimer>
+		<summary lang="en_GB">Kodi Extra Subtitle Fonts Installer</summary>
+		<description lang="en_GB">Installing and uninstalling custom fonts for subtitles (40):[CR][CR]Amazon Ember, Aptos, Arimo, Arvo, Atkinson Hyperlegible, Avenir, Calibri, Fira Sans, Futura, Gill Sans, Gilroy, Helvetica, IBM Plex Mono, IBM Plex Sans, IBM Plex Serif, Inter, Karla, Lato, Lucida Grande, Merriweather, Metropolis, Montserrat, Noto Sans, Noto Serif, Open Sans, Outfit, Overpass, Poppins, PT Sans, PT Serif, Roboto, Rubik, San Francisco Pro, Segoe UI, Source Sans Pro, Tahoma, Tiresias Infofont, Ubuntu, Verdana, Work Sans.</description>
+		<disclaimer lang="en_GB">Simply run the addon to install additional fonts. Run again to uninstall.</disclaimer>
+		<license>GPL-3.0-only</license>
 		<platform>all</platform>
 		<language>en</language>
 		<assets>
 			<icon>icon.png</icon>
 		</assets>
+		<news>[B]v1.1.0 (2026-02-18)[/B]
+- Complete code reconstruction
+- New fonts added with updated naming for consistency, now 40 fonts total
+- Improved install/uninstall stability and tracking with user-friendly dialogs
+- Smart fontcache merging preserves existing user fonts
+- NOTE: If upgrading from previous version of addon, uninstall old fonts first to avoid duplicates
+
+[B]v1.0.0 (2024-11-25)[/B]
+- Initial release
+- Simple one-click install/uninstall script
+- 19 professional subtitle fonts included
+- Cross-platform compatibility
+</news>
 	</extension>
 </addon>
 
@@ -736,7 +829,7 @@ v1.0.1 (2019-08-06)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.0" 
+		version="1.5.1" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -750,7 +843,7 @@ v1.0.1 (2019-08-06)
 	<extension point="xbmc.addon.metadata">
 		<reuselanguageinvoker>false</reuselanguageinvoker>
 		<summary lang="en">External Scrapers Module</summary>
-		<description>This module is a fork of CoCoScrapers with new scrapers from Kodifitzwell installed[CR]Credits to the develpers involved from former Fenom and CoCoScraper coders to current coders of CocoScrapers and of course, Kodifitzwell.[CR]Compatible with Fen, Fen Light, Umbrella and any other add-ons currently using the CoCoScrapers option.</description>
+		<description>This module is a fork of CoCoScrapers with new scrapers from Kodifitzwell installed[CR]Credits to the develpers involved from former Fenom and CoCoScraper coders to current coders of CocoScrapers and of course, Kodifitzwell.[CR]Compatible with any add-ons currently using the CoCoScrapers scrapers.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<disclaimer lang="en">This module simply scans for internet sources that matches common metadata.</disclaimer>
@@ -758,7 +851,7 @@ v1.0.1 (2019-08-06)
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>- 1.5.0 Fixed broken providers</news>
+		<news>- 1.5.1 Added new scrapers</news>
 	</extension>
 </addon>
 
