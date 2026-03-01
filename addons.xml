@@ -131,7 +131,7 @@ Random updates by lolage.
     </extension>
 </addon>
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.11g">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.14g">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
@@ -164,7 +164,7 @@ Random updates by lolage.
         </news>
     </extension>
 </addon>
-<addon id="resource.images.blacklodge.artwork" name="BlackLodge Artwork" version="1.1.0" provider-name="bleak-lodge">
+<addon id="resource.images.blacklodge.artwork" name="BlackLodge Artwork" version="1.1.1" provider-name="bleak-lodge">
     <extension point="kodi.resource.images" compile="false" type="BlackLodge" />
     <requires>
         <import addon="kodi.resource" version="1.0.0"/>
@@ -180,7 +180,7 @@ Random updates by lolage.
         </assets>
     </extension>
 </addon>
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.33g" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.35g" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
