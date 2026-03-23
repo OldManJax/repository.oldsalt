@@ -137,7 +137,7 @@ Random updates by lolage.
     </extension>
 </addon>
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.26g">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.28g">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
