@@ -142,7 +142,7 @@ Random updates by lolage.
     </extension>
 </addon>
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.32g">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.34g">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
@@ -191,7 +191,7 @@ Random updates by lolage.
         </assets>
     </extension>
 </addon>
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.38g2" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.39g" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
@@ -830,7 +830,7 @@ v1.0.1 (2019-08-06)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.1" 
+		version="1.5.2" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -852,7 +852,7 @@ v1.0.1 (2019-08-06)
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>- 1.5.1 Added new scrapers</news>
+		<news>- 1.5.2 Patched Mediafusion</news>
 	</extension>
 </addon>
 
