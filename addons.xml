@@ -149,7 +149,7 @@ Random updates by lolage.
     </extension>
 </addon>
 
-<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.34g">
+<addon id="plugin.video.blacklodge" name="Blacklodge" provider-name="bob" version="1.06.35g">
     <requires>
         <import addon="resource.images.blacklodge.artwork" />
         <import addon="script.module.requests" />
@@ -169,9 +169,6 @@ Random updates by lolage.
         <description lang="en_GB">Fetches official stream urls/ids from various streaming services, and sends them to their equivalent Kodi add-on for playback.[CR]NOTE: This add-on uses free and legal resources for it's purposes. User has to have installed and configured (with linked active account where required) the supported services' equivalent add-ons in order to achieve playback.</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum />
-        <website />
-        <source />
         <disclaimer lang="en_GB">This project uses the TMDb, JustWatch, Trakt, Fanart.tv APIs, but is not affiliated nor endorsed by any of their respective ogranisations.[CR]Please support these ogranisations however you can.</disclaimer>
         <assets>
             <icon>icon.png</icon>
