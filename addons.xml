@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="repository.oldsalt" name="Old Salt Repository" version="1.4" provider-name="Jax">
+<addon id="repository.oldsalt" name="Old Salt Repository" version="1.5" provider-name="Jax">
 <extension point="xbmc.addon.repository" name="Old Salt Repository">
     <dir>
         <info compressed="false">https://github.com/OldManJax/repository.oldsalt/raw/master/addons.xml</info>
@@ -71,12 +71,6 @@
         <info compressed="false">https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/Slamious/swzips/main/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/Slamious/swzips/main/zips/</datadir>
-    </dir>
-    <!--RD Player-->
-    <dir>
-        <info compressed="false">https://rdp.uck.st/rdprepo/zips/addons.xml</info>
-        <checksum>https://rdp.uck.st/rdprepo/zips/addons.xml.md5</checksum>
-        <datadir zip="true">https://rdp.uck.st/rdprepo/zips/</datadir>
     </dir>
     <!--ResolveURL-->
     <dir>
@@ -853,25 +847,6 @@ v1.0.1 (2019-08-06)
 
     2.0.1   July 19, 2021 - Fixed updting based on EPG changes
   </news>
-</addon>
-
-<addon id="plugin.video.shadow"
-       name="Shadow"
-       version="99.7.2a"
-       provider-name="Darkness">
-  <requires>
-    <import addon="script.module.requests"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" 
-            library="default.py">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <reuselanguageinvoker>true</reuselanguageinvoker>
-    <summary lang="en">The single light in the Darkness</summary>
-    <description lang="en">All the media as fast as possible</description>
-    <platform>all</platform>
-  </extension>
-
 </addon>
 
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="2.0.10" provider-name="jmooremcc, spoyser">
