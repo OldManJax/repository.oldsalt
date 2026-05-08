@@ -179,7 +179,7 @@ Random updates by lolage.
         </assets>
     </extension>
 </addon>
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.39g" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.39g3" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
