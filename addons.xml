@@ -948,7 +948,7 @@ v1.0.1 (2019-08-06)
         <description lang="en_GB">Advanced tool to perform various types of Kodi cleaning and optimization.</description>
         <description lang="it_IT">Strumento avanzato che permette di eseguire vari tipi di pulizie e ottimizzazione Kodi.</description>
         <assets>
-            <icon>icon.jpg</icon>
+            <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
             <screenshot>resources/media/screenshot-1.png</screenshot>
             <screenshot>resources/media/screenshot-2.png</screenshot>
