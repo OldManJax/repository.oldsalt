@@ -179,7 +179,7 @@ Random updates by lolage.
         </assets>
     </extension>
 </addon>
-<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.39g3" provider-name="janedoe">
+<addon id="script.module.blackscrapers" name="Blackscrapers Module" version="1.00.40g" provider-name="janedoe">
     <requires>
         <import addon="script.module.beautifulsoup4" />
         <import addon="script.module.requests" />
@@ -767,7 +767,7 @@ v1.0.1 (2019-08-06)
 
 <addon id="script.module.viperscrapers" 
 		name="Viper Scrapers" 
-		version="1.5.2" 
+		version="1.5.3" 
 		provider-name="Jax">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
@@ -789,7 +789,7 @@ v1.0.1 (2019-08-06)
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
 		</assets>
-		<news>- 1.5.2 Patched Mediafusion</news>
+		<news>- 1.5.3 Patched Mediafusion</news>
 	</extension>
 </addon>
 
