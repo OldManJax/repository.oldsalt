@@ -449,7 +449,7 @@ v1.0.1 (2019-08-06)
   </extension>
 </addon>
 
-<addon id="plugin.video.iptvlister" name="IPTV Lister" version="1.3" provider-name="Jax">
+<addon id="plugin.video.iptvlister" name="IPTV Lister" version="1.4" provider-name="Jax">
   <requires>
     <import addon="xbmc.python" version="3.0.0" />
     <import addon="script.module.requests" />
@@ -458,7 +458,7 @@ v1.0.1 (2019-08-06)
     <import addon="script.module.inputstreamhelper" />
     <import addon="script.module.resolveurl"/>
     <import addon="script.module.microjenscrapers" />
-	  <import addon="plugin.video.youtube" optional="true" /> 
+	  <import addon="plugin.video.youtube" /> 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -470,7 +470,7 @@ v1.0.1 (2019-08-06)
     <platform>all</platform>
     <language>en</language>
     <license>GPL-2.0-or-later</license>
-    <news>Broken TVONE removed</news>
+    <news>Rebuilt Menu</news>
 	<assets>
 		<icon>icon.png</icon>
 		<fanart>fanart.jpg</fanart>
